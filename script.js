@@ -133,9 +133,11 @@ function copyToClipboard(value) {
 // Event listner for first password copy button
 copyPasswordBtn1.onclick = function () {
   copyToClipboard(generatedPassword1);
+  copyPasswordBtn1.title = "Password Copied";
 };
 
 // Event listner for second password copy button
 copyPasswordBtn2.onclick = function () {
   copyToClipboard(generatedPassword2);
+  copyPasswordBtn2.title = "Password Copied";
 };
