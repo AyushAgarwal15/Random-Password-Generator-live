@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a <span>random password</span></h1>
+      <p>Never use an inscure password again</p>
+      <div class="slider_main">
+        <input
+          type="range"
+          value="8"
+          min="1"
+          max="16"
+          class="slider"
+          oninput="this.nextElementSibling.value = this.value"
+          onmousemove="this.value"
+          id="slider"
+        />
+        <output>8</output>
+      </div>
+      <button
+        class="btn"
+        id="btn"
+        title="Click the button to generate password."
+      >
+        Generate passwords
+      </button>
+
+      <div class="hr"></div>
+      <div class="password-div">
+        <div class="password-box">
+          <p id="password1" class="password">@ayush_agg15</p>
+          <i class="fa-solid fa-copy" title="Copy" id="copy-password1"></i>
+        </div>
+        <div class="password-box">
+          <p id="password2" class="password">@ayush.ag15</p>
+          <i class="fa-solid fa-copy" title="Copy" id="copy-password2"></i>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
