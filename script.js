@@ -98,6 +98,8 @@ const password2 = document.getElementById("password2");
 const passwordLength = document.getElementById("slider");
 
 function generatePassword() {
+  copyPasswordBtn1.title = "Copy Password";
+  copyPasswordBtn2.title = "Copy Password";
   let password = "";
   let randomIndex = 0;
   for (let i = 0; i < passwordLength.value; i++) {
